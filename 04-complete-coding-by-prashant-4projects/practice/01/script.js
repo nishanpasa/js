@@ -40,8 +40,8 @@ sumArr(numArr);
 
 
 // 6
-/*
+/**/
 let numArr = [1,2,3,4,5];
 let sqArr = numArr.map(x=> x*x)
 console.log(sqArr);
-*/
+
