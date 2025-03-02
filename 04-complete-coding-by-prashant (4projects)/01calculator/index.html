@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Prj-1 | Calculator</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main class="pt-4 ps-4">
+            <p class="mb-1">Prj 1</p>
+            <h1  class="mb-3">Calculator</h1>
+            <div class="calculator-div ">
+                <input class="mb-2" id="input_box" type="text">
+                <br>
+                <button onclick=" currentValue=''; document.querySelector('#input_box').value = currentValue;">C</button>
+                <button onclick="currentValue = currentValue + '/'; document.querySelector('#input_box').value = currentValue;">/</button>
+                <button onclick="currentValue = currentValue + '*'; document.querySelector('#input_box').value = currentValue;">*</button>
+                <button onclick="currentValue = currentValue - '*'; document.querySelector('#input_box').value = currentValue;">-</button>
+                
+                <br>
+                <button onclick="currentValue = currentValue+'7'; document.querySelector('#input_box').value=currentValue;">7</button>
+                <button onclick="currentValue = currentValue+ '8'; document.querySelector('#input_box').value=currentValue;">8</button>
+                <button onclick="currentValue = currentValue + '9'; document.querySelector('#input_box').value=currentValue;">9</button>
+                <button onclick="currentValue = currentValue + '+'; document.querySelector('#input_box').value=currentValue;">+</button>
+                <br>
+                <button onclick="currentValue = currentValue+'4'; document.querySelector('#input_box').value=currentValue;">4</button>
+                <button onclick="currentValue = currentValue +'5'; document.querySelector('#input_box').value=currentValue;">5</button>
+                <button onclick="currentValue = currentValue +'6'; document.querySelector('#input_box').value=currentValue;">6</button>
+                <button onclick="currentValue = currentValue +'.'; document.querySelector('#input_box').value=currentValue;">.</button>
+                <br>
+                <button onclick="currentValue =currentValue+ '1'; document.querySelector('#input_box').value=currentValue;">1</button>
+                <button onclick="currentValue = currentValue +'2'; document.querySelector('#input_box').value=currentValue;">2</button>
+                <button onclick="currentValue = currentValue +'3'; document.querySelector('#input_box').value=currentValue;">3</button>
+                <button onclick="currentValue= eval(currentValue); document.querySelector('#input_box').value = currentValue; ">=</button>
+            </div>
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <script src="script.js"></script>
+        
+        
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

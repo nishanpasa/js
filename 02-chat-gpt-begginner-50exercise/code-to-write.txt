@@ -1,0 +1,26 @@
+<!-- ========== Start done ========== -->
+if is prompt is even {
+ show answer i.e divide it by 2
+ }
+  and 
+  if{ if the answer is even again divide it by 2 i.e repeat the same process  }
+    else { show that the answer is "odd" "} 
+ 
+ 
+ 
+ if prompt is odd{
+ no answer i.e. dont divide by 2 or blank or it is odd number
+ }
+
+
+ if it is odd, add +1 and then repeat again
+
+
+
+
+<!-- ========== End done ========== -->
+
+
+
+
+ 

@@ -1,0 +1,46 @@
+#navDiv {
+    width: 100%;
+}
+#navDiv ul {
+    padding-left: 0px;
+    padding-top: 15px;
+}
+#navDiv ul li{
+    padding-left: 15px;
+}
+#navDiv .logo {
+    /* width: 100%; */
+}
+#navDiv {
+    width: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease 0.2s
+}
+
+.navDiv-width{
+    width: 100% !important;
+}
+
+@media screen and (min-width : 480px) {
+    .navDiv-width{
+        width: 310px !important;
+    }
+    #navDiv .logo {
+        width: unset;
+    }
+    #navDiv .navBurger {
+        /* display: none; */
+    }
+    #navDiv .nav-links ul {
+        /* display: ; */
+    }
+    #navDiv ul li{
+        padding-left: 10px;
+    }
+    #navDiv .nav-links {
+        height: unset;
+    }
+    #navDiv .social-links{
+        height: unset;
+    }
+}

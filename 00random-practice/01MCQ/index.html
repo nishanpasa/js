@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Messi Fan</title>
+    <!-- bootstrap 5.2.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- custom styles  -->
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+
+    <style>
+        /* input[type="radio"]{
+            appearance: none;
+            width: 17px;
+            height: 17px;
+            background-color: #f0f0f0;
+            border: 1px solid #333;
+            cursor: pointer;
+            display: inline-block;
+        }
+        input[type="radio"]:checked{
+            background-color: cornflowerblue;
+            border-color: cornflowerblue;
+        } */
+        input {
+            width: 17px;
+            height: 17px;
+            margin-right: 8px;
+        }
+
+        label {
+            padding-left: 15px;
+            font-size: 24px;
+            font-weight: 600;
+            width: 250px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container pt-5 " style="max-width: 600px;">
+        <h2 class="text-center">How Well you know Messi !</h2>
+
+        <div class="mb-5" id="q1">
+            <h3>1. What is age of Messi?</h3>
+
+            <label for="32">
+                <input onclick="checkAnswer(this)" id="32" type="radio" name="age" value="32">32
+            </label><br>
+            <label for="38"><input onclick="checkAnswer(this)" id="38" type="radio" name="age" value="38">38</label><br>
+            <div class="d-flex justify-content-between" >
+                <label for="37"><input onclick="checkAnswer(this)" id="37" type="radio" name="age" value="37">37</label>
+
+                <button class="d-block mt-3" onclick="nextQ('q1')">Next</button>
+            </div>
+        </div>
+
+        <div class="mb-5 d-none" id="q2">
+            <h3>2. How many World Cup has Messi Won?</h3>
+
+            <label for="0">
+                <input onclick="checkAnswer(this)" id="0" type="radio" name="cup" value="0">0
+            </label><br>
+            <label for="3">
+                <input onclick="checkAnswer(this)" id="3" type="radio" name="cup" value="3">3
+            </label><br>
+            <div class="d-flex justify-content-between" >
+                <label for="1">
+                    <input onclick="checkAnswer(this)" id="1" type="radio" name="cup" value="1">1
+                </label>
+                <button class="d-block mt-3" onclick="nextQ('q2')">Next</button>
+            </div>
+        </div>
+
+        <div class="mb-3 d-none" id="q3">
+            <h3>3. How many kids does Messi has?</h3>
+
+            <label for="2">
+                <input onclick="checkAnswer(this)" id="2" type="radio" name="kids" value="2">2
+            </label><br>
+            <label for="a3">
+                <input onclick="checkAnswer(this)" id="a3" type="radio" name="kids" value="a3">3
+            </label><br>
+            <div class="d-flex justify-content-between" >
+                <label for="11">
+                    <input onclick="checkAnswer(this)" id="11" type="radio" name="kids" value="11">11
+                </label>
+                <button class="d-block mt-3" onclick="nextQ('q3')">Next</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="messiKids" style="display: none;">
+            <h1 class="text-center">NO 11</h1>
+            <img style="
+            width: 100%;
+            margin: auto;
+            align-items: center;
+            display: flex;
+        " src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/08/14/10/Ronaldo-1.jpg?quality=75&width=1250&crop=3%3A2%2Csmart&auto=webp" alt="">
+        </div>
+    </div>
+
+
+
+
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

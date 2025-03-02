@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading" style="margin-bottom: 50px;">Current Time is: <span id="times">hello</span></h4>
+        <p>We display times of different countries </p>
+        <hr>
+        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    </div>
+
+
+    <script>
+
+        // let a;
+        // let date;
+        // let time;
+        setInterval(() => {
+            let a = new Date();
+            // let date = a.getDate() + ":" + a.getMonth() + ":" + a.getYear();
+            let date = a.toDateString();
+            // let date = a.toLocaleDateString();
+            let time = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
+            // let time = a.getHours(); + a.getMinutes(); + a.getSeconds();
+            document.getElementById('times').innerHTML = time + " <br> on " + date;
+            // document.getElementById("times").innerHTML="blue";    
+        }, 1000);
+
+
+
+    </script>
+
+
+</body>
+
+</html>

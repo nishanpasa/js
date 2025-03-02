@@ -1,0 +1,4 @@
+.slider{
+    transition: all 0.3s;
+    flex-shrink: 0;
+}
